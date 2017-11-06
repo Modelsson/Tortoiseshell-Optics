@@ -19,7 +19,6 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   height: 31rem;
-  width: 100%;
 }
 
 .container {
@@ -58,6 +57,10 @@ nav {
 
 nav span {
   padding: 0 1rem;
+}
+
+#menu {
+  display: none;
 }
 
 /* mid row */
@@ -118,6 +121,7 @@ nav span {
 .article {
   display: flex;
   flex-flow: column wrap;
+  text-align: justify;
   width: 38%;
 }
 
@@ -144,4 +148,88 @@ footer img {
   padding: 4rem 1rem 4rem 4rem;
 }
 
-border: 1px solid red;
+@media only screen and (max-width: 1024px) {
+  header {
+    height: 22rem;
+  }
+  .top {
+    top: 0;
+    max-width: 1024px;
+  }
+  .mid {
+    margin-top: 5rem;
+  }
+  .mid span {
+    padding: 0.75rem 4rem;
+    margin-right: 2rem;
+    font-size: 1.33rem;
+  }
+  .heading {
+    width: 70%;
+  }
+  .article {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  header {
+    background-position: 20%;
+    max-width: 660px;
+  }
+  nav span {
+    display: none;
+  }
+  #menu {
+    display: block;
+  }
+  .logo span {
+    display: none;
+  }
+  .mid {
+    margin-top: 13rem;
+    justify-content: center;
+  }
+  .mid span {
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+    margin-right: 0;
+  }
+  .grid {
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 3.77rem o;
+  }
+  .icons {
+    margin: 1.54rem 0;
+    font-size: 0.77rem;
+  }
+  .info {
+    flex-flow: column;
+  }
+  .article {
+    display: flex;
+    text-align: justify;
+    justify-content: center;
+    width: 100%;
+  }
+  .article p {
+    font-size: 0.77rem;
+    width: 90%;
+    padding: 0 5%;
+  }
+  .heading {
+    padding: 0.5rem 0;
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+  footer span {
+    display: none;
+  }
+  footer img {
+    padding: 4rem;
+    margin: 0 auto;
+  }
