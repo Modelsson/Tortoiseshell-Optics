@@ -77,4 +77,34 @@ nav span {
   font-weight: bold;
 }
 
+/* MAIN CONTENT */
+
+/* grid */
+
+.grid {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.icons {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 5rem;
+  height: 8rem;
+  margin: 0 3rem;
+}
+
+.icons img {
+  min-width: 3.5rem;
+  max-width: 5rem;
+  max-height: 4rem;
+}
+
+.icons p {
+  text-align: center;
+}
+
 border: 1px solid red;
